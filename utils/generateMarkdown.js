@@ -1,8 +1,11 @@
 // function to generate markdown for README
 function generateMarkdown(userAnswers) {
+
+  const noSpace = userAnswers.licenses.replace(" ", "%20")
+  
   return `
   # ${userAnswers.title}
-  ![GitHub license]()
+  ![](https://img.shields.io/badge/license-${noSpace}-${userAnswers.badgecolor})
 
   ## Description
   ${userAnswers.description}
@@ -17,7 +20,9 @@ function generateMarkdown(userAnswers) {
 
   ## Installation
   To install necessary dependencies, run the following command:
-  > ${userAnswers.dependencies}
+  ${"```"} 
+  ${userAnswers.dependencies} 
+  ${"```"} 
 
   ## Usage
   ${userAnswers.usage}

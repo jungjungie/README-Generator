@@ -25,6 +25,12 @@ inquirer.prompt([
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
     {
+        message: "Choose a color for your license badge:",
+        name: "badgecolor",
+        type: "list", 
+        choices: ['brightgreen', 'yellow', 'orange', 'red', 'blue']
+    },
+    {
         message: "What command line should be run to install dependencies?",
         name: "dependencies",
         type: "input",
