@@ -1,4 +1,5 @@
 var inquirer = require('inquirer');
+var fs = require('fs');
 
 // array of questions for user
 // const questions = [
@@ -35,27 +36,27 @@ inquirer.prompt([
     {
         message: "What command line should be run to install dependencies?",
         name: "dependencies",
-        type: "input"
-        // Make the default npm i if user hits enter
+        type: "input",
+        default: "npm i"
     },
     {
         message: "What command should be run to run tests?",
-        name: "testrun",
+        name: "test",
         type: "input"
     },
     {
         message: "What does the user need to know about using the repo?",
-        name: "title",
+        name: "usage",
         type: "input"
-        // They need to run 'node index.js' to get it to run
     },
     {
         message: "What does the user need to know about contributing to the repo?",
-        name: "title",
+        name: "contributions",
         type: "input"
-        // always make pull requests
     }
-])
+]).then(function(userAnswers) {
+    console.log(userAnswers);
+})
 
 //  Usage, License, Contributing, Tests, and Questions
 // usage information, contribution guidelines, and test instructions
