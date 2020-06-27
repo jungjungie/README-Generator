@@ -8,12 +8,12 @@ function generateMarkdown(userAnswers) {
   ${userAnswers.description}
 
   ## Table of Contents
-  * [Installation]()
-  * [Usage]()
-  * [License]()
-  * [Contributions]()
-  * [Tests]()
-  * [Questions]()
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Contributing](#Contributing)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
 
   ## Installation
   To install necessary dependencies, run the following command:
@@ -25,15 +25,15 @@ function generateMarkdown(userAnswers) {
   ## License
   ${userAnswers.licenses}
 
-  ## Contributions
-  ${userAnswers.contributions}
+  ## Contributing
+  ${userAnswers.contributing}
 
   ## Tests
   ${userAnswers.test}
 
   ## Questions
   If you have any questions about the repo, please open an issue or contact me at the following:
-  - GitHub: ${userAnswers.username}
+  - GitHub: https://github.com/${userAnswers.username}
   - Email:  ${userAnswers.email}
 `;
 }

@@ -9,16 +9,6 @@ var generateMarkdown = require('./utils/generateMarkdown.js')
 
 inquirer.prompt([
     {
-        message: "Enter your GitHub username:",
-        name: "username",
-        type: "input"
-    },
-    {
-        message: "Enter your email address:",
-        name: "email",
-        type: "input"
-    },
-    {
         message: "Enter project title:",
         name: "title",
         type: "input"
@@ -41,18 +31,28 @@ inquirer.prompt([
         default: "npm i"
     },
     {
-        message: "What command should be run to run tests?",
-        name: "test",
-        type: "input"
-    },
-    {
         message: "What does the user need to know about using the repo?",
         name: "usage",
         type: "input"
     },
     {
-        message: "What does the user need to know about contributing to the repo?",
-        name: "contributions",
+        message: "What guidelines should the user know about contributing to the repo?",
+        name: "contributing",
+        type: "input"
+    },
+    {
+        message: "What command should be run to run tests?",
+        name: "test",
+        type: "input"
+    },
+    {
+        message: "Enter your GitHub username:",
+        name: "username",
+        type: "input"
+    },
+    {
+        message: "Enter your email address:",
+        name: "email",
         type: "input"
     }
 ]).then(function(userAnswers) {

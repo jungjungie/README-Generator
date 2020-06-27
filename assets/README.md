@@ -1,32 +1,35 @@
-# TEST
+
+  # README Generator
   ![GitHub license]()
 
   ## Description
-  testing this app
+  This generates a readme
 
   ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributions](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Contributing](#Contributing)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
 
   ## Installation
   To install necessary dependencies, run the following command:
   > npm i
 
   ## Usage
-  must install npm install
+  Must run npm install
 
   ## License
-  MIT
+  APACHE 2.0
 
-  ## Contributions
-  git pull
+  ## Contributing
+  Do a git pull
 
   ## Tests
-  npm install
+  node index.js
 
   ## Questions
-  If you have any questions about the repo, please open an issue or contact me at estherjmin@gmail.com. 
+  If you have any questions about the repo, please open an issue or contact me at the following:
+  - GitHub: https://github.com/jungjungie
+  - Email:  email@email.com
