@@ -1,6 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(userAnswers) {
-  return `# ${userAnswers.title}
+  return `
+  # ${userAnswers.title}
   ![GitHub license]()
 
   ## Description
@@ -31,7 +32,9 @@ function generateMarkdown(userAnswers) {
   ${userAnswers.test}
 
   ## Questions
-  If you have any questions about the repo, please open an issue or contact me at estherjmin@gmail.com. 
+  If you have any questions about the repo, please open an issue or contact me at the following:
+  - GitHub: ${userAnswers.username}
+  - Email:  ${userAnswers.email}
 `;
 }
 
