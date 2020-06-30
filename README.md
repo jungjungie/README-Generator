@@ -24,6 +24,9 @@ npm i
 node index.js
 ```
 - Provide information for the ReadMe file as prompted.
+
+<div style="text-align:center"><img src="images/demo1.jpg" /></div>
+
 - Note that when prompted with the question `"What command line should be run to install dependencies?"`, the default will be `npm i` if no other input is provided.
 - After all prompts are answered, if the application ran successfully, the terminal will show the message `"Success! File was written to README2.md"` and a new README2.md will have been generated.
 - If for any reason the application did not run successfully, an error will be displayed on the terminal. 
@@ -32,7 +35,7 @@ node index.js
 
 ***
 ## Demo
-![gif demo of app](images/readmegenerator.gif)
+![gif demo of app](images/demo.gif)
 
 ***
 ## Tests
